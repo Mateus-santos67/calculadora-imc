@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200&display=swap');
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #090d22;
+    font-family: 'Martian Mono', monospace;
+    color: #ffffff; /* Added text color for the entire body */
+}
+
+.container {
+    background-color: #1f1e34;
+    position: relative;
+    margin: 15rem auto;
+    width: 20rem;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container.active {
+    color: #ffffff;
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 30px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 25px;
+    margin-bottom: 15px; /* Added margin-bottom for better spacing */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px; /* Added margin-top for better spacing from the form */
+}
+
+footer button,
+footer input, button {
+    flex-grow: 2;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+footer button, button {
+    background-color: #e03e36;
+}
+
+footer input {
+    background-color: #413f43;
+}
+
+.result{
+    display: none;
+}
+
